@@ -1,6 +1,6 @@
-artifact_location: mlflow-artifacts:/0
-creation_time: 1776579264864
+artifact_location: file:///D:/KULIAH/Pelatihan%20%26%20Sertifikasi/Pijak%20IBM/SMSML_Rendi-Agus-Sucipto/Eksperimen_SML_Rendi-Agus-Sucipto/Membangun_model/mlruns/0
+creation_time: 1776583804093
 experiment_id: '0'
-last_update_time: 1776579264864
+last_update_time: 1776583804093
 lifecycle_stage: active
 name: Default

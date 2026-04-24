@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/KULIAH/Pelatihan%20%26%20Sertifikasi/Pijak%20IBM/SMSML_Rendi-Agus-Sucipto/Eksperimen_SML_Rendi-Agus-Sucipto/Membangun_model/mlruns/0/55cf2c2edb6a4acba5b081ebefae670c/artifacts
+end_time: 1776584727179
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 55cf2c2edb6a4acba5b081ebefae670c
+run_name: delightful-shoat-789
+run_uuid: 55cf2c2edb6a4acba5b081ebefae670c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1776584695322
+status: 3
+tags: []
+user_id: rendi
