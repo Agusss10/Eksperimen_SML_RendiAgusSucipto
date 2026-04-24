@@ -5,9 +5,7 @@ from sklearn.metrics import accuracy_score
 import mlflow
 import mlflow.sklearn
 
-#set tracking
-# mlflow.set_tracking_uri("http://127.0.0.1:5000")
-# mlflow.set_experiment("Latihan Credit Scoring")
+mlflow.autolog()
 
 # load data hasil preprocessing
 df = pd.read_csv("preprocessing/credit_risk_preprocessing/data_processed.csv")
@@ -27,7 +25,6 @@ with mlflow.start_run():
     acc = accuracy_score(y_test, y_pred)
 
     mlflow.log_metric("accuracy", acc)
-    mlflow.sklearn.log_model(model, "model")
 
     print("Accuracy:", acc)
     print("Jumlah fitur:", X.shape[1])
