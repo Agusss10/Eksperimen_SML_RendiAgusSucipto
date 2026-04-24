@@ -1,0 +1,29 @@
+import mlflow.pyfunc
+
+# load model
+model = mlflow.pyfunc.load_model("mlruns/0/73529ef629d842f5a068ba814f04c533/artifacts/model")
+
+# test predict
+import pandas as pd
+
+columns = [
+    'person_age', 'person_income', 'person_emp_length', 'loan_amnt',
+    'loan_int_rate', 'loan_percent_income', 'cb_person_cred_hist_length',
+    'person_home_ownership_OTHER', 'person_home_ownership_OWN', 'person_home_ownership_RENT',
+    'loan_intent_EDUCATION', 'loan_intent_HOMEIMPROVEMENT', 'loan_intent_MEDICAL',
+    'loan_intent_PERSONAL', 'loan_intent_VENTURE',
+    'loan_grade_B', 'loan_grade_C', 'loan_grade_D', 'loan_grade_E',
+    'loan_grade_F', 'loan_grade_G',
+    'cb_person_default_on_file_Y'
+]
+
+sample = pd.DataFrame([[
+    22, 59000, 123.0, 35000, 16.02, 0.59, 3,
+    False, False, True,
+    False, False, False, True, False,
+    False, False, True, False, False, False,
+    True
+]], columns=columns)
+
+pred = model.predict(sample)
+print("Prediction:", pred)
